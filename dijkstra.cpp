@@ -3,7 +3,7 @@ using namespace std;
 const int INF = 1e9;
 vector<int> Dijkstra(vector<pair<int, int>> (&graph)[], int source, int node)
 {
-    vector<int> destination(node, INF); // may occour error for size
+    vector<int> destination(node, INF);
     vector<int> visited(node, 0);
     set<pair<int, int>> st;
     destination[source] = 0;
